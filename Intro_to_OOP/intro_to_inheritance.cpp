@@ -40,7 +40,9 @@ int main() {
     ChildClass_3 c3;
     c1.var1 = 4;
     std::cout << c1.var1 << "\n";
-
+    /*
+    However, all member variables/methods are not accessible to the user for derived class.
+    */
 
     /* Note: c2.var1 is not accessible here, since its scope is protected (only the class itself and its childern can access) */
     // c2.var1 = 5;
