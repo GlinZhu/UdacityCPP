@@ -1,5 +1,5 @@
 #include <iostream>
-
+class Rectangle; //forward declaration
 class Square{
 private:
     int side;
