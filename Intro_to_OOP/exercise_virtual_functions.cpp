@@ -15,6 +15,7 @@ class Shape {
      * If we delegate with instruction "= 0", we are notifying compiler that
      * this (base) class doesn't have virtual method implementation,
      * but EVERY OTHER DERIVED CLASS IS REQUIRED TO IMPLEMENT THIS METHOD.
+       and the base class is considered as abstract class
      */
     virtual double Area() const = 0;
     virtual double PerimeterLength() const = 0;
@@ -31,8 +32,9 @@ class Rectangle : public Shape {
 
     /* Note: If we have created a virtual function in the base class 
      * and it is being overridden in the derived class then we don’t 
-     * need virtual keyword in the derived class, functions are 
+     * need override keyword in the derived class, functions are 
      * automatically considered as virtual functions in the derived class.
+     However, override keywords helps us identify if the class is derived from base calss or not.
      */
     double Area() const;
     double PerimeterLength() const;
